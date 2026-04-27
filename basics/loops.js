@@ -1,0 +1,35 @@
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.col-md-6{
+    flex: 1;
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #635353;
+    color: #aba0a0;
+    border: 1px solid #555;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0;
+
+}
+
+button a{
+  text-decoration: none;  /* removes underline */
+  color: inherit;         /* removes blue color */
+}
