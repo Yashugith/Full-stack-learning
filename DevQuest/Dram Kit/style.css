@@ -1,0 +1,109 @@
+body{
+    text-align: center;
+    background-color:#044a3f;
+    font-family : 'Arvo', cursive;
+
+}    
+
+h1 {
+    font-size: 3rem;
+    color: #ff0000;
+    font-family: 'Arvo'cursive;
+    text-shadow: 3px 2px 2px #DBEDF3;
+    
+}
+
+footer {
+    color: aliceblue;
+    font-family: sans-serif;
+    text-shadow: 3px 2px 2px #DBEDF3;    
+}
+
+.w { 
+    background-image: url("./images/crash.png");
+    font-family: 'carvo', cursive;
+    font-size: large bold;
+    color: rgb(83, 25, 28);
+    text-shadow: 2px 2px 5px rgb(128, 20, 158);
+    font-size: 14px;
+}
+.a { 
+    background-image: url("./images/kick.png");
+    font-family: 'carvo', cursive;
+    font-size: large bold;
+    color: rgb(224, 218, 224);
+    text-shadow: 2px 2px 5px rgb(151, 138, 155);
+}
+.s { 
+    background-image: url("./images/snare.png"); 
+    font-family: 'carvo', cursive;
+    font-size:  14px large bold;
+    color: rgb(26, 2, 30);
+    text-shadow: 2px 2px 5px rgb(158, 23, 23);
+}
+.d { 
+    background-image: url("./images/tom1.png"); 
+    font-family: 'carvo', cursive;
+    font-size:  14px large bold;
+    color: rgb(223, 220, 220);
+    text-shadow: 2px 2px 5px rgb(213, 204, 204);
+}
+.f {
+     background-image: url("./images/tom2.png"); 
+     font-family: 'curve', cursive;
+     font-size:  14px large bold;
+     color: rgb(244, 241, 241);
+     text-shadow: 2px 2px 5px rgb(215, 207, 207);
+    }
+.g {
+     background-image: url("./images/tom3.png"); 
+     font-family: 'curve', cursive;
+     font-size:  14px large bold;
+     color: rgb(243, 239, 239);
+     text-shadow: 2px 2px 5px rgb(158, 23, 23);
+    }
+.h {
+     background-image: url("./images/tom4.png"); 
+     font-family: 'curve', cursive;
+     font-size:  14px large bold;
+     color: rgb(83, 25, 28);
+     text-shadow: 2px 2px 5px rgb(158, 23, 23);
+    }
+.j {
+     background-image: url("./images/hihat.png");
+     font-family: 'curve', cursive;
+     font-size:  14px large bold;
+     color: rgb(83, 25, 28);
+     text-shadow: 2px 2px 5px rgb(158, 23, 23);
+     }
+
+.drum  {
+  height: 50px;
+  width: 50px;
+  outline: none;
+  border: 5px solid #262e46;
+  font-family: "arvo", cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  border-radius: 15px;
+  display: inline-block;
+  
+  background-size: cover;       /* 🔥 important */
+  background-position: center;  /* center image */
+  background-repeat: no-repeat;
+  text-shadow: 2px 2px 5px rgb(158, 23, 23); /* make text visible */
+}
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #dbedf3;
+    opacity: 0.5;
+    transform: translateY(4px);
+
+}
+
+.red {
+    color: #ff0000;
+    text-shadow: 3px 2px 2px #DBEDF3;
+}
+
