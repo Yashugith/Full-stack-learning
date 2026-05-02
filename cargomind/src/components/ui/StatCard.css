@@ -1,0 +1,76 @@
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.stat-card:hover {
+  border-color: var(--border-bright);
+  transform: translateY(-1px);
+}
+
+.stat-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stat-card__label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.stat-card__icon {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-card--accent .stat-card__icon { background: var(--accent-dim); color: var(--accent); }
+.stat-card--green .stat-card__icon { background: var(--green-dim); color: var(--green); }
+.stat-card--red .stat-card__icon { background: var(--red-dim); color: var(--red); }
+.stat-card--yellow .stat-card__icon { background: var(--yellow-dim); color: var(--yellow); }
+.stat-card--orange .stat-card__icon { background: var(--orange-dim); color: var(--orange); }
+
+.stat-card__value {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.stat-card__sub {
+  font-size: 11px;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+.stat-card__glow {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  filter: blur(24px);
+  pointer-events: none;
+}
+
+.stat-card--accent .stat-card__glow { background: var(--accent-glow); }
+.stat-card--green .stat-card__glow { background: rgba(0, 229, 160, 0.2); }
+.stat-card--red .stat-card__glow { background: rgba(255, 77, 106, 0.2); }
+.stat-card--yellow .stat-card__glow { background: rgba(245, 200, 66, 0.2); }
+.stat-card--orange .stat-card__glow { background: rgba(255, 140, 66, 0.2); }
