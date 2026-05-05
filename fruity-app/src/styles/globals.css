@@ -1,0 +1,64 @@
+/* src/styles/globals.css */
+/* Global reset and base styles for the Fruity App */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Nunito', sans-serif;
+  background: #fff9f0;           /* warm peachy white background */
+  color: #2d1a4b;                /* deep purple for all text */
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar styling — thin and cute */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #fff0f6; }
+::-webkit-scrollbar-thumb { background: #ffaac4; border-radius: 4px; }
+
+/* Selection highlight */
+::selection {
+  background: #ffaac4;
+  color: #2d1a4b;
+}
+
+/* Make all buttons and inputs inherit the font */
+button, input, select, textarea {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Mobile-first: center app content and limit width */
+.app-shell {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 20px 16px 60px;
+  min-height: 100vh;
+}
+
+/* Bottom navigation bar spacing */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-top: 2px solid #ffe0f0;
+  display: flex;
+  z-index: 100;
+}
+
+/* Utility: visually hidden (for screen readers) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+}
